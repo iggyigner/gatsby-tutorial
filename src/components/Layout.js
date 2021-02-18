@@ -1,6 +1,8 @@
 import React from "react"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
+// Because it's not a JS file,  you need to write the full extension
+import "./layout.css"
 
 const Layout = ({ children }) => {
   return (
