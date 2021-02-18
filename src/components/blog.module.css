@@ -1,0 +1,12 @@
+.page {
+  background: rgb(166, 197, 29);
+}
+
+.page h1 {
+  color: peachpuff;
+}
+
+.text {
+  line-height: 1.5;
+  color: rgb(42, 42, 199);
+}

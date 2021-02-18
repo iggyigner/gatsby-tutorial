@@ -1,0 +1,12 @@
+.page {
+  background: grey;
+}
+
+.page h1 {
+  color: black;
+}
+
+.text {
+  line-height: 1.5;
+  color: lavender;
+}
