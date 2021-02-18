@@ -6,6 +6,7 @@ const Navbar = () => {
     <div>
       <ul>
         <li>
+          {/* Can only use Link for internal links */}
           <Link to="/">Home</Link>
         </li>
         <li>
