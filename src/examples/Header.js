@@ -7,10 +7,12 @@ import React from "react"
 // 2) must be used INSIDE the function, otherwise will get an error
 import { useStaticQuery, graphql } from "gatsby"
 
+// you can add an alias to any field by simply typing the alias name followed by a colon in front of the field
+// be sure to update your destructuring obj / view template with this new alias (can no longer use the original)
 const getData = graphql`
   {
     site {
-      siteMetadata {
+      info: siteMetadata {
         author
         data
         description
@@ -32,9 +34,10 @@ const ComponentName = () => {
   // const data = useStaticQuery(getData)
   // OR
   // use destructuring (unpack the properties to variables so you don't need to drill down so deeply)
+  // what variables you type in your destructuring obj must have the same names as the object properties you're unpacking
   const {
     site: {
-      siteMetadata: {
+      info: {
         author,
         title,
         person: { age },
