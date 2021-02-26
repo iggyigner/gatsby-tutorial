@@ -1,5 +1,5 @@
 import React from "react"
-// Because Header it is a default export, you can import/name the component whatever you want
+// Because Header is a default export, you can import/name the component whatever you want
 import Header from "../examples/Header"
 
 const examples = () => {
