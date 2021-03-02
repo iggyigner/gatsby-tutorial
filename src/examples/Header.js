@@ -1,5 +1,5 @@
 import React from "react"
-// useStaticQuery is a reactHook from Gatsby, graphql is a tag template from gatsby
+// useStaticQuery is a reactHook from Gatsby, graphql is a tag template literal from gatsby
 // tag templates are a JS thing, not a gatsby thing. Here they contain the query between the template literal ticks
 // whereas with styled components, they contain the css
 // For useStaticQuery, all normal react hook rules apply:
@@ -9,6 +9,15 @@ import { useStaticQuery, graphql } from "gatsby"
 
 // you can add an alias to any field by simply typing the alias name followed by a colon in front of the field
 // be sure to update your destructuring obj / view template with this new alias (can no longer use the original)
+// you should also be able to name your query here using the useStaticQuery hook
+// so the beginning of your query looks like...
+// const getData = graphql`
+//     query FirstQuery {
+//       site {
+//         ...
+//       }
+//     }
+// `
 const getData = graphql`
   {
     site {
